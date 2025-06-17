@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaEdit } from 'react-icons/fa';
 
 export const Instructions = () => {
     return (
@@ -13,9 +14,9 @@ export const Instructions = () => {
                     <li>
                         Cada tarea se mostrará en una lista con tres botones:
                         <ul className="list-disc pl-6 mt-1">
-                            <li>✓ para marcar como completada.</li>
-                            <li>✎ para editar la tarea.</li>
-                            <li>✕ para eliminarla.</li>
+                            <li>⚪ para marcar como completada.</li>
+                            <li>📝 para editar la tarea.</li>
+                            <li>🗑️ para eliminarla.</li>
                         </ul>
                     </li>
                     <li>Una vez completada, la tarea se mostrará con una línea atravesada.</li>
