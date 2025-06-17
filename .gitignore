@@ -1,23 +1,47 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ver documentación oficial en https://help.github.com/articles/ignoring-files/
 
-# dependencies
+# Dependencias y configuración de paquetes
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+# Archivos de compilación y producción
+/build
+/dist
+
+# Cobertura de pruebas
 /coverage
 
-# production
-/build
-
-# misc
+# Configuraciones y variables de entorno
 .DS_Store
+.env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.development
+.env.production
+.env.test
 
+# Archivos de registro y caché
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log
+debug.log
+
+# Configuración de editores y sistemas operativos
+.idea/
+.vscode/
+Thumbs.db
+
+# Archivos generados por eslint, prettier y herramientas de desarrollo
+.eslintcache
+.prettier
+
+# Archivos temporales de React y Next.js
+.next/
+.out/
+.cache/
+public/
+
+# Archivos relacionados con Firebase y otras plataformas
+firebase.json
+.firebaserc
