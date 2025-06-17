@@ -29,7 +29,7 @@ export const Instructions = () => {
                 </div>
 
                 <img
-                    src="/PolimataAI.avif"
+                    src="/PolimataAI.png"
                     alt="Logo PolimataAI"
                     className="max-w-[9rem] h-auto py-4"
                 />
