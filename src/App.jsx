@@ -3,7 +3,7 @@ import { TodoAdd } from './components/TodoAdd';
 import { TodoList } from './components/TodoList';
 import { useTodo } from './hooks/useTodo';
 import './App.css';
-import { Link } from 'react-router-dom'; // Importación de Link
+import { Link } from 'react-router-dom';
 
 function App() {
   const {
@@ -18,14 +18,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
-      <div className="w-full max-w-2xl bg-white shadow-xl rounded-lg p-6">
+      <div className="w-full max-w-2xl bg-white shadow-xl rounded-lg p-6 relative">
+
+
         <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">Lista de Tareas</h1>
 
         <div className="text-right mb-4">
-          <Link
-            to="/instrucciones"
-            className="text-sm text-blue-500 hover:underline"
-          >
+          <Link to="/instrucciones" className="text-sm text-blue-500 hover:underline">
             📘 Ver instrucciones
           </Link>
         </div>
@@ -50,7 +49,15 @@ function App() {
           handleDeleteTodo={handleDeleteTodo}
           handleCompleteTodo={handleCompleteTodo}
         />
+
+        <img
+          src="/PolimataAI.avif"
+          alt="Logo PolimataAI"
+          className="max-w-[9rem] h-auto py-4"
+        />
       </div>
+
+
     </div>
   );
 }
